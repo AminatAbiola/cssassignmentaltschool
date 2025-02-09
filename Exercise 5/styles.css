@@ -1,0 +1,336 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Lato", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* BUTTONS */
+button {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  } 
+
+  .btn-primary {
+    background-color: #038E7D; 
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 12px 165px;
+    border-radius: 6px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #026b5f;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: #038E7D;
+    border: 2px solid #038E7D;
+    text-decoration: none;
+    padding: 12px 30px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #026b5f;
+    color: white;
+  }
+
+  .btn-tertiary {
+    background: none;
+    color: #038E7D;
+    border: none;
+    text-decoration: none;
+  }
+  
+  .btn-tertiary:hover {
+    color: #026b5f;
+  }
+    
+
+.main-container{
+    background-color: #F5F8FA;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0.1rem 2rem 4rem 2rem;
+    gap: 5.375rem;
+}
+
+.nav-bar{
+    margin: 0rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom:  2px solid #E0E6EA ;
+    padding: 0.3rem 0rem; 
+}
+
+.cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta .btn-tertiary{
+    color: #1D2C3C;
+}
+
+.cta .btn-secondary{
+    color: #1D2C3C;
+    border: 2px solid #1D2C3C;
+    border-radius: 6px;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    width: auto;
+    height: auto;
+    margin-left: 280px;
+    margin-right: 280px;
+}
+
+.form-container{
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+    padding: 1.5rem 0 1.5rem 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.title-container{
+    width: 100%;
+    padding: 0;
+    border-bottom:  2px solid #F5F7FA ;
+}
+
+.title-container h2{
+    padding: 0 0 1rem 5rem ;
+}
+
+.title-info-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.basic-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    border-bottom:  2px solid #F5F7FA ;
+    padding: 0 0 1rem 5rem ;
+}
+
+.input-group-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+
+.payment-info-container .input-group{
+    width: 498px;
+}
+  /* INPUT FIELD */
+  label {
+    font-size: 16px;
+    font-weight: medium;
+  }
+  
+  input {
+    padding: 8px 12px; /* Padding inside input */
+    width: 200px; /* Adjust length */
+    border: 0px solid #ccc;
+    color: #EDEFF2;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #EDEFF2;
+    flex: 1;
+  }
+
+  .suffix {
+    font-size: 16px;
+    color: #555;
+    padding-left: 10px;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #007bff; /* Highlight when focused */
+  }
+  
+
+.payment-info-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    border-bottom:  2px solid #F5F7FA ;
+    padding: 0 0 1rem 5rem ;
+}
+
+.cta-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.primary-button{
+    background-color: #038E7D;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 24px;
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  font-weight: 600; 
+  text-align: center; 
+  text-decoration: none;
+}
+
+.sec-cta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+.freelancer-container{
+    background-color: #1179BF;
+    color: #fff;
+    width: 30%;
+    height: 100%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.top-container-freelancer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+
+.first-section-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.second-section-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.third-section-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.item-freelancer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.divider{
+    border-bottom:  2px solid #ffffff50 ;
+    padding: 0 0 1rem 5rem ;
+}
+
+.buttom-container-freelancer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1rem;
+}
+
+.third-section-top .btn-tertiary{
+    color: #fff;
+    text-decoration: underline #B9F5FF 3px;
+}
+
+.client{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+}

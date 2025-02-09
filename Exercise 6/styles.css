@@ -1,0 +1,769 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+}
+
+/* FONT */
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Italic Versions */
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url('/assets/fonts/Gilroy-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  body {
+    font-family: 'Gilroy', sans-serif;
+  }
+  
+.hero-section-container{
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem 0rem 5rem;
+    gap: 7.5rem;
+}
+
+/* BUTTONS */
+button {
+    font-family: "Lato", serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  } 
+
+  .btn-primary {
+    background-color: #0065FE; 
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 100px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #015de7;
+  }
+
+  .btn-secondary {
+    background-color: transparent;
+    color: #0065FE;
+    border: 1px solid #0065FE;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 100px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #015de7;
+    color: white;
+  }
+
+  .btn-tertiary {
+    background: none;
+    color: #141414;
+    border: none;
+    text-decoration: none;
+    
+  }
+  
+  .btn-tertiary:hover {
+    color: #292828;
+  }
+
+  /* NAV BAR */
+  .main-nav-cta .btn-tertiary{
+    color: #0065FE;
+  }
+
+.navbar-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-mid-cta{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.main-nav-cta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.chevron {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #333;
+    border-bottom: 2px solid #333;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+  }
+
+/* HERO SECTION */
+.hero-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    gap: 24px;
+}
+
+.hero-text-container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-text-container .text h3{
+    font-size: 48px;
+    line-height: 130%;
+    width: 948px;
+    text-align: center;
+}
+
+.hero-text-container .text p{
+    font-family: Gilroy-Medium;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+
+}
+.hero-section-asset{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero-section-asset .second-asset{
+    position: relative;
+}
+
+.stroke-asset{
+    position: absolute;
+    top: 310px;
+    left: center;
+}
+
+.hero-text-container .cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-text-container .cta .btn-tertiary{
+    color: #0065FE;
+}
+/* METRICS */
+.metric-why-scissors-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: auto; 
+}
+
+.metric-container{
+    background-color: #F9FBFD;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem 4rem;
+
+}
+.left-metric{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.left-metric h2{
+    color: #191919;
+    font-size: 24px;
+    line-height: 140%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+
+}
+
+.right-metrics{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 2rem;
+    width: 50%;
+}
+
+.right-metrics h4{
+    font-size: 24px;
+}
+
+.right-metrics p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-metrics .item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.why-scissors-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6rem;
+    gap: 6rem;
+}
+
+.left-why-scissors{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.title-why-scissors{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.right-features-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 2rem;
+}
+
+.feature-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 4rem;
+}
+
+.main-features-container{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+.main-features-container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 0.5rem;
+}
+    /*  */
+.main-pricing-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.25rem;
+    padding: 6rem 0;
+}
+
+.main-pricing-container .text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.pricing-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.text-area .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 20px;
+}
+
+.text-area .support-text{
+    width: 556px;
+    text-align: center;
+}
+
+                        /* PRICING!!! */
+.pricing-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 32rem;
+    padding: 0 10rem;
+    gap: 2rem;
+}
+
+.basic-container{
+    width: 19rem;
+    height: 80%;
+    background-color: #fff;
+    border: 0.4px solid #005AE2;
+    border-radius: 0.8rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.professional-container{
+    width: 22rem;
+    margin: -3rem;
+    background: linear-gradient(to right, #1E3448, #1E3448);
+    color: #fff;
+    padding: 2rem 4rem;
+    height: 100%;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative; /* Required for z-index to work */
+  z-index: 10; /* Sends it behind other elements */
+  gap: 2rem;
+}
+
+.teams-container{
+    width: 19rem;
+    height: 80%;
+    background-color: #fff;
+    border: 0.4px solid #005AE2;
+    border-radius: 0.8rem;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-container h4{
+    font-size: 24px;
+
+}
+
+.pricing-container h3{
+    font-size: 32px;
+}
+/* support copy */
+.pricing-container h5{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.pricing-container p{
+    font-size: 14px;
+}
+
+.main-pricing-container .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.main-pricing-container .price{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.3rem;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+.access-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 1rem;
+}
+
+/* FORM */
+.form-container{
+    height: 32.75rem;
+    background-color: #1E3448;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-child-container{
+    background-color: white;
+    border-radius: 12px;
+    padding: 2.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.2rem;
+    max-width: 470px;
+}
+
+input {
+    padding: 12px 12px; /* Padding inside input */
+    width: 390px; /* Adjust length */
+    border: 1px solid #4891ff;
+    color: #4891ff;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1;
+  }
+  select {
+    padding: 12px; /* Padding inside input */
+    width: 390px; /* Adjust length */
+    border: 1px solid #4891ff;
+    color: #4891ff;
+    border-radius: 8px;
+    font-size: 16px;
+    flex: 1;
+  }
+  
+  .input-row{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.input-row input{
+    width: 188px;
+}
+
+.input-row select{
+    width: 188px;
+}
+/* Form Buttons */
+.form-child-container .primary-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 100px;
+}
+
+.form-container .sec-cta{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.form-container .sec-cta p{
+    color: #4891ff;
+    text-align: center;
+    width: 100%;
+}
+
+.form-container .sec-cta a{
+    color: #005AE2;
+    width: 100%;
+    text-align: center;
+}
+
+/* FAQ */
+.faq-container{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 3rem 0rem ;
+}
+
+.faq-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.faq-body {
+    max-width: 49.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+    font-family: Arial, sans-serif;
+}
+
+.faq-item {
+    width: 49.5rem;
+    padding: 0 0 1rem 0;
+    border-bottom: 0.4px solid #D6D6D6;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.8rem;
+    
+}
+
+.faq-question {
+    width: 100%;
+    text-align: left;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.faq-answer{
+    width: 100%;
+}
+
+.cta-container{
+    background-color: #1E3448;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 2rem;
+}
+
+.cta-container h3{
+    font-size: 32px;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35rem;
+    padding: 2rem 12.5rem;
+    gap: 4rem;
+    position: relative; /* Ensures asset stays inside */
+    overflow: hidden; /* Prevents asset from overflowing */
+}
+
+/* FOOTERASSET */
+
+.left-footer-asset {
+    position: absolute;
+    top: 80%; /* Move down 50% from the top */
+    left: 0%; /* Move right 50% from the left */
+    transform: translate(-50%, -50%); /* Center the asset */
+    width: 100px; /* Adjust size */
+    height: auto;
+  }
+
+.right-footer-asset{
+    position: absolute;
+    top: 80%; /* Move down 50% from the top */
+    left: 70%; /* Move right 50% from the left */
+    transform: translate(-50%, -50%); /* Center the asset */
+    width: 100px; /* Adjust size */
+    height: auto;
+}
+  
+
+.top-footer-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 2rem 12.5rem;
+    gap: 4rem;
+}
+.left-top-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem;
+}
+.left-top-footer .socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 1.2rem;
+}
+
+.right-top-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 2rem ;
+    width: auto;
+}
+
+.col-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 0.5rem;
+    width: 11.25rem;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 3rem;
+}
+
+.col-item h5{
+    font-size: 16px;
+    font-weight: 800;
+    width: 100%;
+}
+
+
+
+.footnote-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 0.6rem;
+    color: #000;
+}
+
+

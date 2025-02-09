@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS Exercise 5 </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main class="main-container">
+
+        <!-- Nav Bar -->
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="./images/wppusher-logo-copy.png" alt="">
+            </div>
+            <div class="cta">
+                <a href="#" class="btn btn-tertiary">Download</a>
+                <a href="#" class="btn btn-tertiary">Learn More</a>
+                <a href="#" class="btn btn-tertiary">Pricing</a>
+                <a href="#" class="btn btn-tertiary">Help</a>
+                <a href="#" class="btn btn-secondary">Account</a>
+            </div>
+        </nav>
+
+        <!--Main Content Area -->
+        <div class="content-container">
+
+            <!-- Form & Freelance -->
+            <div class="details-container">
+                <!-- FORM -->
+                <form class="form-container">
+                    <div class="title-container">
+                        <h2>Checkout</h2>
+                    </div>
+
+                    <!-- BASIC INFO CONTAINER -->
+
+                    <div class="basic-info-container">
+                        <div class="title-info-section">
+                            <img src="./images/one.svg" alt="">
+                            <p>Your Basic Information</p>
+                        </div>
+    
+                        <div class="input-group-row">
+                            <div class="input-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" name="name" id="name" placeholder="Jane">
+                            </div>
+                            <div class="input-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" name="name" id="name" placeholder="Doe">
+                            </div>
+                        </div>
+                        <div class="input-group-row">
+                            <div class="input-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="janedoe@example.com">
+                            </div>
+                        </div>
+                        
+                    </div>
+    
+                    <!-- PAYMENT INFO CONTAINER -->
+                    <div class="payment-info-container">
+                        <div class="title-info-section">
+                            <img src="./images/two.svg" alt="">
+                            <p>Your Payment Information</p>
+                        </div>
+                        <div class="input-group">
+                            <label for="card">Credit Card</label>
+                            <input type="text" placeholder="Card Number">
+                            <!--Doesn't work!!! <span class="suffix">MM/YYYY CVV</span> -->
+                        </div>
+                    </div>
+
+                    <!-- CTA CONTAINER -->
+                    <div class="cta-container">
+                        <a href="#" class="btn btn-primary">Buy WP Pusher</a>
+                        <div class="sec-cta">
+                            <img src="./images/Mask.svg" alt="">
+                            <p>Need any help?</p>
+                            <p> Don’t hesitate to</p>
+                            <a href="#" class="btn btn-tertiary">contact support!</a>
+                        </div>
+                        <div class="strip-logo-container">
+                            <img src="./images/powered_by_stripe.png" alt="">
+                        </div>
+                    </div>
+                    
+                </form>
+                <!-- FREELANCER -->
+                <div class="freelancer-container">
+                    <div class="top-container-freelancer">
+                        <div class="first-section-top">
+                            <div class="title">Freelancer</div>
+                            <div class="pricing"> <p><span style="font-size: 20px;">$</span><span style="font-size: 40px;">99</span><span style="font-size: 20px;">/year</span></p>
+ </div>
+                            <div class="paragrapgh"> <p>Automatically renews after 1 year</p> </div>
+                        </div>
+                        <div class="second-section-top">
+                            <div class="item-freelancer">
+                                <img src="./images/Combined Shape Copy 2.svg" alt="">
+                                <p>Use on 5 client sites</p>
+                            </div>
+    
+                            <div class="item-freelancer">
+                                <img src="./images/Combined Shape Copy 2.svg" alt="">
+                                <p>Private repositories</p>
+                            </div>
+    
+                            <div class="item-freelancer">
+                                <img src="./images/Combined Shape Copy 2.svg" alt="">
+                                <p>Email support</p>
+                            </div>
+    
+                        </div>
+                        <div class="third-section-top">
+                            <p>Need 20 client sites?</p>
+                            <a href="#" class="btn btn-tertiary">Switch to the Agency plan.</a>
+                        </div>
+                    </div>
+
+                <div class="divider"></div>
+                
+                    <div class="buttom-container-freelancer">
+                        <div class="testimonial">FTP is horrible to deal with. <span style="font-weight: 700;" >WP Pusher</span> solves that issue, and the customer support is awesome!</div>
+                        <div class="client">
+                            <img src="./images/Bitmap.png" alt="">
+                            <p>Kirk Beard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <div class="copyright"> <small>© 2018 <span>WP Pusher IVS</span></small> </div>
+                <div class="termsofservice">
+                    <a href="#" class="btn btn-tertiary">Terms of Service</a>
+                </div>
+            </footer>
+        </div>
+
+    </main>
+
+</body>
+</html>
