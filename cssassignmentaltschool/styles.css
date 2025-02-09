@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+}
+
+.contentarea{
+  background-color: #202020;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 5rem 20rem 5rem 20rem ;
+}
+
+.textcard{
+  background-color: #fff;
+  width: 53%;
+  height: auto;
+  padding: 3rem 1rem 1rem 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.8rem;
+}
+
+.cardtitle{
+  background-color: #FF0095;
+  text-decoration-color: #202020;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  position: absolute; 
+  top: 60px;
+  left: 400px;
+}
+
+.description{
+  padding: 0.65rem;
+  width: auto;
+}
